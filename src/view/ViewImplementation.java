@@ -5,6 +5,8 @@
  */
 package view;
 
+import javax.swing.JFrame;
+
 /**
  * View implementation where show the greeting in text type UI.
  * @author Ruben Rabadan Hierro
@@ -16,6 +18,9 @@ public class ViewImplementation implements View{
      */
     @Override
     public void showGreeting(String greeting) {
+        /*UI ui;
+        ui = new UI(greeting);
+        ui.setVisible(true);*/
         System.out.println(greeting);
     }
 }
