@@ -44,13 +44,12 @@ public class DBManager {
             
             statement = connection.createStatement();
             
-            String select = "select greeting from greeting";
-            ResultSet resultSet = statement.executeQuery(select);
-		
-		while(resultSet.next()) {
-                    greeting=resultSet.getString("greeting");
-		}
-		resultSet.close();
+            String select = "select * from greeting";
+           try (ResultSet resultSet = statement.executeQuery(select)) {
+               while(resultSet.next()) {
+                   greeting=resultSet.getString("greeting");
+               }
+           }
             
             this.closeConnection();   
        }
