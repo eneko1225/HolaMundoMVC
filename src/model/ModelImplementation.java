@@ -12,6 +12,9 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import application_1.DBManager;
+import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 /**
  * Model implementation where return the greeting.
  * @author Ruben Rabadan Hierro
