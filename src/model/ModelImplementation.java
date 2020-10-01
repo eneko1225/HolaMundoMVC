@@ -23,7 +23,7 @@ public class ModelImplementation implements Model{
      * @throws java.io.FileNotFoundException
  */
     @Override
-   /* public String getGreeting() throws FileNotFoundException, IOException {
+    public String getGreeting() throws FileNotFoundException, IOException {
         String cadena;
         String archivo = "C:\\Users\\rubir\\Desktop\\HOLA.txt";
         FileReader f = new FileReader(archivo);
@@ -31,12 +31,12 @@ public class ModelImplementation implements Model{
         cadena = b.readLine();
         b.close();
         return cadena;
-    }*/
-    public String getGreeting()throws FileNotFoundException, IOException {        
+    }
+    /*public String getGreeting()throws FileNotFoundException, IOException {        
         DBManager db = new DBManager();
-         String greeting;
+        String greeting;
         greeting = db.getGreetingDB();
         return greeting;
-    }
+    }*/
             
 }
