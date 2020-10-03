@@ -19,26 +19,6 @@ public class ModelImplementation implements Model{
  */
     @Override
     public String getGreeting() throws FileNotFoundException, IOException {
-        //configOutput = new FileOutputStream("data/config.properties");
-        
-        /*
-        Properties greetingFile = new Properties();
-        InputStream configInput = null;
-        
-        configInput = new FileInputStream("greetingFile");
-        greetingFile.load(configInput);
-        */
-        
-        //greetingFile.load(in);
-        /*
-        //String cadena;
-        //String archivo = greetingFile.getProperty("greeting");
-        FileReader f = new FileReader(greetingFile.getProperty("greeting"));
-        BufferedReader b = new BufferedReader(f);
-        cadena = b.readLine();
-        b.close();
-        return cadena;*/
-        //return greetingFile.getProperty("greeting");
         return ResourceBundle.getBundle("model.greetingFile").getString("greeting");
     }
     /* public String getGreeting()throws FileNotFoundException, IOException {        
