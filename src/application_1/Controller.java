@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ResourceBundle;
 import model.Model;
 import view.View;
 
@@ -28,6 +29,17 @@ public class Controller {
         
         
         public static void run(View vi, Model mo) throws IOException{
-            vi.showGreeting(mo.getGreeting());
+            String propertie=ResourceBundle.getBundle("model.greetingFile").getString("parameter");
+            boolean textView=false;
+            if("text".equalsIgnoreCase(propertie))
+                textView=true;
+            else if("window".equalsIgnoreCase(propertie))
+                textView=false;
+            else{
+                System.out.println("No has introducido una opcion valida, cambia el archivo de propiedades, recuerda que tienes que elegir entre 'texto' y 'ventana'");
+                System.exit(0);
+            }
+            
+            vi.showGreeting(mo.getGreeting(), textView);
         }
 }

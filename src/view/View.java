@@ -13,7 +13,8 @@ public interface View {
     /**
      * Shows a greeting in UI.
      * @param greeting The String that contain the greeting 
+     * @param textView 
      */ 
-    public void showGreeting(String greeting);
+    public void showGreeting(String greeting, boolean textView);
     
 }

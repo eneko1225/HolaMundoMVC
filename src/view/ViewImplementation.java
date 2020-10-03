@@ -6,6 +6,7 @@
 package view;
 
 import javax.swing.JFrame;
+import java.util.ResourceBundle;
 
 /**
  * View implementation where show the greeting in text type UI.
@@ -15,12 +16,17 @@ public class ViewImplementation implements View{
     /**
      * Shows the param greeting in text type UI.
      * @param greeting 
+     * @param parameter 
      */
     @Override
-    public void showGreeting(String greeting) {
-        /*UI ui;
-        ui = new UI(greeting);
-        ui.setVisible(true);*/
-        System.out.println(greeting);
+    public void showGreeting(String greeting, boolean parameter) {
+        
+        if(parameter)
+            System.out.println(greeting);
+        else {
+            UI ui;
+            ui = new UI(greeting);
+            ui.setVisible(true);
+        }
     }
 }
