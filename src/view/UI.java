@@ -7,7 +7,7 @@ package view;
 
 /**
  *
- * @author rubir
+ * @author Ruben Rabadan
  */
 public class UI extends javax.swing.JFrame {
 
