@@ -22,7 +22,7 @@ public class ModelImplementation implements Model{
     public String getGreeting() throws FileNotFoundException, IOException {
         return ResourceBundle.getBundle("model.greetingFile").getString("greeting");
     }
-    //It will take the greetin from a database
+    //It will take the greeting from a database
     /* public String getGreeting()throws FileNotFoundException, IOException {        
         DBManager db = new DBManager();
          String greeting;
