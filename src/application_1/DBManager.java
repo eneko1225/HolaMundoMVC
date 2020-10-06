@@ -13,7 +13,7 @@ import java.sql.Statement;
 
 /**
  *
- * @author rubir
+ * @author Ruben Rabadan
  */
 public class DBManager {
      /**

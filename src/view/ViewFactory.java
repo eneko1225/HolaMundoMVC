@@ -7,7 +7,7 @@ package view;
 
 /**
  *
- * @author rubir
+ * @author Eneko Medel
  */
 public class ViewFactory {
     

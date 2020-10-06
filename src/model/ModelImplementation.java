@@ -17,10 +17,12 @@ public class ModelImplementation implements Model{
  * @return a String that contains the greeting.
      * @throws java.io.FileNotFoundException
  */
+    //It take the greeting from the properties file
     @Override
     public String getGreeting() throws FileNotFoundException, IOException {
         return ResourceBundle.getBundle("model.greetingFile").getString("greeting");
     }
+    //It will take the greeting from a database
     /* public String getGreeting()throws FileNotFoundException, IOException {        
         DBManager db = new DBManager();
          String greeting;

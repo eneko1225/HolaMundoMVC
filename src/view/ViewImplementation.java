@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
 
 /**
  * View implementation where show the greeting in text type UI.
- * @author Ruben Rabadan Hierro
+ * @author Eneko Medel
  */
 public class ViewImplementation implements View{
     /**
