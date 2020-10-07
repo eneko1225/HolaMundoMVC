@@ -108,7 +108,7 @@ public class Util {
 				num=x;
 			}
 			if(num<x || num>y) {
-				System.out.println("ERROR. Dato fuera de rango, introduce de nuevo: ");
+				System.out.println("ERROR. Dato fuera de rango. ");
 			}
 		}while(blnError);
 		

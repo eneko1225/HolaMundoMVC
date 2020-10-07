@@ -6,6 +6,7 @@
 package application_1;
 
 import java.io.IOException;
+import static java.lang.System.exit;
 import java.util.ResourceBundle;
 import javax.rmi.CORBA.Util;
 import model.Model;
@@ -24,16 +25,15 @@ public class Controller {
                 int opc=utilities.Util.leerInt(1, 2);
                 
             boolean textView=false;
-            //If 'text' is written it will show a text view in the viewImplementation
+            //If '1' is written it will show a text view in the viewImplementation
             if(opc==1)
                 textView=true;
-            //If 'window' is written it will show a window view in the viewImplementatin
+            //If '2' is written it will show a window view in the viewImplementatin
             else if(opc==2)
                 textView=false;
-            //If none of the previous options is written it will show you that the parameter written us not valid
             else{
-                System.out.println("No has introducido una opcion valida, cambia el archivo de propiedades, recuerda que tienes que elegir entre 'texto' y 'ventana'");
-                System.exit(0);
+                System.out.println("Saliendo");
+                exit(0);
             }
             //Shows the greeting in the choosen view
             vi.showGreeting(mo.getGreeting(), textView);
